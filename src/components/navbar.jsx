@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Navbar, Nav, Container, Image, Row, Col,Button } from 'react-bootstrap'
+import { Navbar, Nav, Container, Image, Row, Col, Button } from 'react-bootstrap'
 import { Outlet, Link } from "react-router-dom";
 import logo from '../assets/img/AictiveLogo.png'
 
@@ -15,53 +15,43 @@ const NavBar = () => {
   }, [])
 
   const handleClick = () => {
-    if (show==='') {
-      setShow('active');  
-    }else{
+    if (show === '') {
+      setShow('active');
+    } else {
       setShow('');
     }
 
     console.log("diste click al boton")
-    
+
   }
   return (
     <>
       <Navbar className="vh-100 float-start p-0 me-3">
         <Row xs="auto" className="h-100 g-0">
           <Col className={`h-100 big-column ${show}`}>
-            <Container style={{marginTop:39+'px'}}>
+            <Container className="ps-3" style={{ marginTop: 171 + 'px' }}>
               <Nav className="me-auto flex-column">
-                <Nav.Link>
-                  <Link to="/">
-                    Inicio
-                  </Link>
-                </Nav.Link>
-                <Nav.Link>
-                  <Link to="/profile">
-                    Mi cuenta
-                  </Link>
-                </Nav.Link>
-                <Nav.Link>
-                  <Link to="/settings">
-                    Ajustes
-                  </Link>
-                </Nav.Link>
-                <Nav.Link>
-                  <Link to="/apps">
-                    Aplicaciones
-                  </Link>
-                </Nav.Link>
-                <Nav.Link>
-                  <Link to="/support">
-                    Soporte
-                  </Link>
-                </Nav.Link>
+                <Link to="/" className="py-4">
+                  Inicio
+                </Link>
+                <Link to="/profile" className="py-4">
+                  Mi cuenta
+                </Link>
+                <Link to="/settings" className="py-4">
+                  Ajustes
+                </Link>
+                <Link to="/apps" className="py-4">
+                  Aplicaciones
+                </Link>
+                <Link to="/support" className="py-4">
+                  Soporte
+                </Link>
               </Nav>
             </Container>
           </Col>
           <Col className="h-100 small-column">
             <Container className="d-flex flex-column align-items-center">
-              
+
               <Navbar.Brand className="m-0 w-100">
                 <Button variant="link" onClick={handleClick} className="p-0 logo-btn">
                   <Image
@@ -72,32 +62,23 @@ const NavBar = () => {
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto flex-column">
-                  <Nav.Link>
-                    <Link to="/">
-                      <Image src={homeIcon} />
-                    </Link>
-                  </Nav.Link>
-                  <Nav.Link>
-                    <Link to="/profile">
-                      <Image src={profileIcon} />
-                    </Link>
-                  </Nav.Link>
-                  <Nav.Link>
-                    <Link to="/settings">
-                      <Image src={settingsIcon} />
-                    </Link>
-                  </Nav.Link>
-                  <Nav.Link>
-                    <Link to="/apps">
-                      <Image src={appsIcon} />
-                    </Link>
-                  </Nav.Link>
-                  <Nav.Link>
-                    <Link to="/support">
-                      <Image src={supportIcon} />
-                    </Link>
-                  </Nav.Link>
+                <Nav className="me-auto flex-column align-items-center">
+                  <Link to="/" className="p-3">
+                    <Image src={homeIcon} />
+                  </Link>
+                  <Link to="/profile" className="p-4">
+                    <Image src={profileIcon} />
+                  </Link>
+                  <Link to="/settings" className="p-4">
+                    <Image src={settingsIcon} />
+                  </Link>
+                  <Link to="/apps" className="p-4">
+                    <Image src={appsIcon} />
+                  </Link>
+                  <Link to="/support" className="p-4">
+                    <Image src={supportIcon} />
+                  </Link>
+
                 </Nav>
               </Navbar.Collapse>
             </Container>
