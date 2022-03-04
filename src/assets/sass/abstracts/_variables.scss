@@ -1,8 +1,9 @@
 @import "bootstrap/scss/functions";
-$font-family-sans-serif:'Roboto', sans-serif;
+$font-family-sans-serif:'Open Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 $body-color:#000000;
-$secondary:#5C5959;
+$primary:#1D8CEA;
+$secondary:#6D6D6D;
 
 $font-weight-bolder:800;
 
@@ -11,10 +12,8 @@ $border-color: #C2C2C2;
 
 //Typography
 $font-family-primary: $font-family-sans-serif;
+$font-family-secondary: 'Quicksand', sans-serif;
 
-/* 
-$font-family-secondary: 'Poppins', sans-serif;
-$font-family-tertiary: 'Montserrat', sans-serif; */
 
 
 

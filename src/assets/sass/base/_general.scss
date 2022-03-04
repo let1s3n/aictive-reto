@@ -1,9 +1,6 @@
 
-body.modal-open {
-  position: fixed;
-  overflow-y: scroll !important;
-  width: 100%;
-  padding-right: 0!important;
+body {
+  background-color: #F5F5F5;
 }
 
 
@@ -30,7 +27,15 @@ button{
     box-shadow: none !important;
   }
 }
-
+.btn-outline-primary:hover{
+  color: #FFFFFF !important;
+}
+.font-primary{
+  font-family: $font-family-primary;
+}
+.font-secondary{
+  font-family: $font-family-secondary;
+}
 .visually-hidden{
   display: none;
 }
@@ -42,4 +47,7 @@ button{
       text-align: justify;
     }
   }
+}
+.font-sm{
+  font-size:$font-size-sm !important;
 }

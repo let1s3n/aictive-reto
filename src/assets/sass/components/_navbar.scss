@@ -15,6 +15,30 @@
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
     border-radius: 0px 16px 16px 0px;
     /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+    a{
+      z-index: 2;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      transform: none;
+      &:hover{
+        background-color: #FFFFFF;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.2);
+        transition: all .3s ease-in-out;
+        .icon{
+          fill:purple !important;
+          rect{
+            fill:purple !important;
+          }
+        }
+        .special-icon{
+          path{
+            fill:purple !important;
+          }
+        }
+      }
+    }
   }
   .big-column{
     /* display: none; */
@@ -34,6 +58,9 @@
       a{
         width: 140%;
         border-bottom: 1px solid #C2C2C2;
+        &:last-child{
+          border-top: 1px solid #C2C2C2;
+        }
       }
     }
   }
