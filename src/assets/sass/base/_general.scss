@@ -1,0 +1,45 @@
+
+body.modal-open {
+  position: fixed;
+  overflow-y: scroll !important;
+  width: 100%;
+  padding-right: 0!important;
+}
+
+
+.fw-500{
+  font-weight: 500 !important;
+}
+.fw-600{
+  font-weight: 600 !important;
+}
+
+a{
+  text-decoration: none;
+  color: unset;
+  &:active{
+    outline: none;
+    color: unset;
+  }
+  &:visited{
+    color: unset;
+  }
+}
+button{
+  &:focus{
+    box-shadow: none !important;
+  }
+}
+
+.visually-hidden{
+  display: none;
+}
+
+
+.text-justify{
+  &--mobile{
+    @include media-breakpoint-down(sm) {
+      text-align: justify;
+    }
+  }
+}
