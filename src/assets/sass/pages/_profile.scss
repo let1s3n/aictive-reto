@@ -1,0 +1,19 @@
+.profile-col{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 9px;
+  .form-control{
+    width: 265px;
+    height: 40px;
+  }
+  .form-label{
+    width: 65px;
+  }
+  .btn-submit{
+    width: 184px;
+    height: 39px;
+    bottom:17px;
+    right:19px;
+    border-radius: 5px;
+  }
+}
