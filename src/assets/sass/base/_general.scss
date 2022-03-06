@@ -3,7 +3,22 @@ body {
   background-color: #F5F5F5;
 }
 
-
+::-webkit-scrollbar {
+  width: 10px;
+  height:10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6F28E0 0%, #1D8CEA 55.73%);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(180deg, #6F28E0 0%, #1D8CEA 55.73%);
+}
+::-webkit-scrollbar-track{
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 7px 10px 12px #f0f0f0;
+}
 .fw-500{
   font-weight: 500 !important;
 }
