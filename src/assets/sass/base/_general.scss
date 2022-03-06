@@ -27,15 +27,19 @@ button{
     box-shadow: none !important;
   }
 }
-.btn,.btn-primary{
+/* .btn,.btn-primary{
   color: #FFFFFF !important;
-}
+} */
 .btn-outline-primary:hover,.btn-check:checked + .btn-outline-primary{
   color: #FFFFFF !important;
 }
-.btn-check:focus + .btn-outline-primary{
+.btn-check:focus + .btn-outline-primary,.btn-check:checked + .btn-outline-primary:focus,.btn-outline-primary:focus{
   box-shadow: none !important;
 }
+
+
+
+
 .font-primary{
   font-family: $font-family-primary;
 }
