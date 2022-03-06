@@ -10,7 +10,7 @@ const Home = () => {
   const [checked, setChecked] = useState(false);
   const [radioValue, setRadioValue] = useState("1");
   return (
-    <Container className="g-0 vh-100 d-flex flex-column pt-13 align-items-center">
+    <Container className="g-0 vw-75 vh-100 d-flex flex-column pt-13 align-items-center">
       <ToastContainer className="p-3" position="top-end">
         <Toast>
           <Toast.Body className="d-flex py-1 px-2 justify-content-between">

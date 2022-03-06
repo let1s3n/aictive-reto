@@ -6,8 +6,12 @@
     height: 67px;
     background: #170D61;
     border-radius: 0px 10px 10px 0px;
-    margin-top: 41px;
+    margin-top: 21px;
+    margin-bottom: 31px;
+    @include media-breakpoint-up(xxl){
+      margin-top: 41px;
     margin-bottom: 63px;
+    }
   }
   .small-column{
     width: 5vw !important;
@@ -39,6 +43,12 @@
         }
       }
     }
+    .navbar-nav{
+      row-gap: .7rem;
+      @include media-breakpoint-up(xxl){
+        row-gap: 1.7rem;
+      }
+    }
   }
   .big-column{
     /* display: none; */
@@ -47,6 +57,12 @@
     top: 0;
     bottom: 0;
     left: -12vw;
+    &>.container{
+      margin-top: 119px;
+      @include media-breakpoint-up(xxl){
+        margin-top: 171px;
+      }
+    }
     .nav-link{
       border-bottom: none;
     }

@@ -24,24 +24,24 @@ const NavBar = () => {
       <Navbar className="vh-100 float-start p-0 me-3">
         <Row xs="auto" className="h-100 g-0">
           <Col className={`h-100 big-column ${show}`}>
-            <Container className="ps-3" style={{ marginTop: 171 + 'px' }}>
+            <Container className="ps-3">
               <Nav className="me-auto flex-column text-secondary">
-                <Link to="/" className="py-4">
+                <Link to="/" className="py-3 py-xxl-4">
                   Inicio
                 </Link>
-                <Link to="/profile" className="py-4">
+                <Link to="/profile" className="py-3 py-xxl-4">
                   Mi cuenta
                 </Link>
-                <Link to="/settings" className="py-4">
+                <Link to="/settings" className="py-3 py-xxl-4">
                   Ajustes
                 </Link>
-                <Link to="/apps" className="py-4">
+                <Link to="/apps" className="py-3 py-xxl-4">
                   Aplicaciones
                 </Link>
-                <Link to="/support" className="py-4">
+                <Link to="/support" className="py-3 py-xxl-4">
                   Soporte
                 </Link>
-                <Link to="/" className="py-4 mt-15">
+                <Link to="/" className="py-3 py-xxl-4 mt-md-8 mt-xxl-15">
                   Cerrar Sesión
                 </Link>
               </Nav>
@@ -60,7 +60,7 @@ const NavBar = () => {
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto flex-column align-items-center" style={{ rowGap: 1.7 + 'rem' }}>
+                <Nav className="me-auto flex-column align-items-center">
                   <Link to="/" className="d-flex justify-content-center align-items-center">
                     {/* <Image src={homeIcon} /> */}
                     <svg className="icon" width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +107,7 @@ const NavBar = () => {
                     </svg>
 
                   </Link>
-                  <Link to="/" className="d-flex justify-content-center align-items-center mt-15">
+                  <Link to="/" className="d-flex justify-content-center align-items-center mt-8 mt-xxl-15">
                     <svg className="special-icon" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1.63519 1.67378L1.63519 19.3704L10.3796 19.3704L10.3796 21L5.72205e-06 21L7.55792e-06 -9.07416e-07L10.3768 -2.46228e-10L10.3768 1.67378L1.63519 1.67378Z" fill="white" />
                       <path d="M14.4471 13.4274L16.5536 11.3266L8.07195 11.3266L8.07195 9.65708L16.5121 9.65708L14.4373 7.562L15.5779 6.39505L19.6084 10.4769L15.537 14.5437L14.4471 13.4274Z" fill="white" />

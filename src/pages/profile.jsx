@@ -3,7 +3,7 @@ import { Container, Row, Col, Image, Form, Button } from 'react-bootstrap'
 import ppPlaceholderBig from '../assets/img/pp-placeholder-big.svg'
 const Profile = () => {
   return (
-    <Container className="g-0 vh-100 d-flex flex-column pt-13 align-items-center">
+    <Container className="g-0 vw-75 vh-100 d-flex flex-column pt-md-7 pt-xxl-13 align-items-center">
       <div>
         <Row className="g-0 mb-2">
           <h5 className="m-0 text-primary">Mi cuenta</h5>
