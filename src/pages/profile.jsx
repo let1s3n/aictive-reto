@@ -14,7 +14,7 @@ const Profile = () => {
   return (
     <>
       {!control ?
-        <div className='ms-8 mt-3 d-flex align-items-center float-start' style={{ left: -25 + 'px', top: 20 + 'px', cursor: 'pointer', columnGap: 12 + 'px' }} onClick={handleBack} >
+        <div className='ms-8 mt-3 d-flex align-items-center float-start' style={{ cursor: 'pointer', columnGap: 12 + 'px' }} onClick={handleBack} >
           <Image src={atrasIcon} />
           <p className="m-0 text-primary font-sm">Atrás</p>
         </div>
